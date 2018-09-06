@@ -5,9 +5,8 @@
 
 
 
-
-
 \usepackage{fontspec}
+\usepackage{enumitem}
 \usepackage{color}
 \newcommand{\longhorn}{\includegraphics[scale=0.008]{longhorn.png}}
 \begin{document}
@@ -26,9 +25,9 @@
     %\href{mailto:dhruv.rajan@utexas.edu}{dhruv.rajan@utexas.edu}
 %    \href{mailto:dhruv@krishnaprem.com}{dhruv@krishnaprem.com}
     ~
-    \href{https://www.linkedin.com/in/dhruvrajan}{in://dhruvrajan}
+    \href{https://www.linkedin.com/in/dhruvrajan}{linkedin.com:dhruvrajan}
     %\href{https://dhruvrajan.github.io}{dhruvrajan.github.io}
-    \href{https://github.com/dhruvrajan}{github://dhruvrajan}
+    \href{https://github.com/dhruvrajan}{github.com:dhruvrajan}
     %\href{https://atmospherejs.com/dhruv/}{atmospherejs://dhruv}
  \section{interests}
     artificial intelligence, machine learning, randomization, statistical learning theory
@@ -45,8 +44,8 @@
 %compelling user value.
 
 \section{technical skills}
-	Languages: Python, Java, C/C++, Haskell, Unix, Git, HTML5, CSS3, JavaScript, SQL, {\fontfamily{cmr}\selectfont \LaTeX} \\
-	Packages: ~~nltk3, numpy, pandas, scipy, scikit-learn, OpenCV
+	Python, Scala, Java, C/C++, Haskell, Unix, Git, HTML5, CSS3, JavaScript, SQL, {\fontfamily{cmr}\selectfont \LaTeX} \\
+	Packages: ~~nltk3, numpy, pandas, scipy, scikit-learn, OpenCV, Spark
     %Python (nltk3, numpy, pandas, scipy, scikit-learn, OpenCV), Haskell, Java, C++, C, \\ HTML5, CSS3, 
     %JavaScript, SQL, Unix,  x86 assembly, Git,  {\fontfamily{cmr}\selectfont \LaTeX }
 
@@ -55,33 +54,37 @@
 
 \begin{entrylist}
 \entry
- {May 2018}
+ {2018}
   {Uber Inc.}
   {Palo Alto, CA}
-  {\emph{\thinfont Software Engineering Intern (Maps)} \\
-  	}
+  {\emph{\thinfont Software Engineering Intern (Maps)}
+  
+  \begin{itemize}[leftmargin=*]
+  \item Developed Spark pipelines to generate vector tilesets for accurate display of rich map features. 
+  \item Automated map generation from GPS traces using Hidden Markov Models.
+  \end{itemize}
+  }
 
 \entry
  {2016}
-  {Gnetic, Inc. (\href{https://www.gneticinc.com}{www.gnetic.com})}
-  {Palo Alto, CA}
+  {Viabot (\href{https://www.viabot.co/}{viabot.co})}
+  {\hspace*{\fill} (formerly Gnetic, Inc.) \hspace*{\fill} Palo Alto, CA}
   {\emph{\thinfont Software Engineer} \\
-  	Put together and programmed electrical system for a prototype using an Arduino and RaspberryPI,
-	and an Android controller.}
+  	Put together and programmed electrical system for a prototype outdoor robot.}
   %------------------------------------------------
 \entry
 {2014}
 {Declara, Inc. (\href{https://www.declara.com}{www.declara.com})}
 {Palo Alto, CA}
 {\emph{\thinfont Data Science Intern} \\
-Developed text tagging system for online documents, using python and techniques from text-retrieval, machine learning, and natural language processing.}
+Developed a text tagging system for online documents, using python and techniques from text-retrieval, machine learning, and natural language processing.}
 %------------------------------------------------
 \entry
 {2014}
 {Whodini, Inc. }%(\href{https://www.whodini.com}{www.whodini.com})}
 {(acquired by Declara, Inc. in 2014)~~~~~~~~~~~Los Altos, CA}
 {\emph{\thinfont Software Engineering Intern} \\
-Worked on topic-classification pipelines for workforce engagement and expert identification.}
+Worked on topic-classification pipelines for identifying experts in large teams.}
 \end{entrylist}
 
 
@@ -93,7 +96,21 @@ Worked on topic-classification pipelines for workforce engagement and expert ide
 	{The University of Texas at Austin~~~~~\longhorn}
 	{Austin, TX}
 	{B.S. Computer Science, Turing Scholar}
-	{CS 331H: Algorithms \& Complexity, CS 378: Randomized Algorithms, CS 378H: Data Mining, \\CS 343H Artificial Intelligence, CS 353: Theory of Computation, CS 439H Operating Systems,\\ CS 429H: Computer Org \& Architecture, CS 314H Data Structures, CS 311H Discrete Math, \\ M 340L Linear Algebra, M 362K Probability 1, Multivariable \& Vector Calculus}
+	{CS 388G Natural Language Processing,
+	CS 395T Computational \& Statistical Learning Theory,
+	\vspace{1mm}
+\hrule
+\vspace{1mm}
+	
+	CS 378H Data Mining,
+	CS 343H Artificial Intelligence,
+	CS 378 Randomized Algorithms, \\
+	CS 331H Algorithms \& Complexity, 	 	 
+	CS 353 Theory of Computation, 
+	CS 439H Operating Systems, \\
+	CS 429H Computer Architecture, 
+	CS 314H Data Structures, 
+	CS 311H Discrete Math}
 	
   \schoolentry
   	{2012-2016}
@@ -122,20 +139,24 @@ Worked on topic-classification pipelines for workforce engagement and expert ide
 \section{projects}
 
 \begin{entrylist}
+%\entry
+%  {2018-now}
+%  {UTCS: Natural Language Processing}
+%  {Austin, TX}
+%  {Research in NLP with applications in the medical field.}
 \entry
   {2017}
-  {UT Austin Computer Science}
+  {UTCS: Programming Languages}
   {Austin, TX}
-  {\emph{\thinfont Undergraduate Researcher} \\
-  	Worked on a system for functional probabilistic programming in Haskell.}
+  {Worked on a system for functional probabilistic programming in Haskell.}
   \entry{2016}
   {scrivener.ai}
   {MHacks; Detroit, MI}
   {Using NLP and Speech Recognition to structurally transcribe audio from meetings to increase productivity.  \href{https://github.com/dhruvrajan/scrivener.ai}{https://github.com/dhruvrajan/scrivener.ai}}
   \entry{2013--2016}
-{GRTPyFramework (GRT \# 192, \href{https://www.gunnrobotics.com}{gunnrobotics.com})}
-{Palo Alto, CA}
-{Developed robotics control system in python for Gunn's entry in the FIRST robotics competition. Won the \textit{Innovation in Control} award at the 2016 Milwaukee Regional for automatic vision-aided aiming, and controllable design. See (\href{https://github.com/grt192}{github://grt192}).}
+{GRTPyFramework (GRT \# 192)}
+{See: \href{https://www.gunnrobotics.com}{gunnrobotics.com}, \href{https://github.com/grt192}{github.com/grt192} ~~~ Palo Alto, CA}
+{Developed robotics control system in python for Gunn's entry in the FIRST robotics competition. Won the \textit{Innovation in Control} award at the 2016 Milwaukee Regional for automatic vision-aided aiming, and controllable design.}
 \entry{2014}
   {15th Place in picoCTF}
   {Carnegie Mellon picoCTF}
